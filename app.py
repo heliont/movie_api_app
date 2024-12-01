@@ -1,4 +1,5 @@
 import streamlit as st
+from genres.page import show_genres
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
         st.text('Este é um app de visualização de filmes, gêneros, atores/atrizes e avaliações.')
 
     elif menu_option == 'Gêneros':
-        st.write('Lista de Gêneros')
+        show_genres()
 
     elif menu_option == 'Atores/Atrizes':
         st.write('Lista de Atores e Atrizes')
