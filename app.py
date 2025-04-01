@@ -1,6 +1,7 @@
 import streamlit as st
 from login.page import show_login
 from genres.page import show_genres
+from home.page import show_home
 from actors.page import show_actors
 from movies.page import show_movies
 from reviews.page import show_reviews
@@ -19,8 +20,7 @@ def main():
         )
 
         if menu_option == 'Início':
-            st.subheader('Bem-vindo ao Movie App!')
-            st.text('Este é um app de visualização de filmes, gêneros, atores/atrizes e avaliações.')
+            show_home()
 
         elif menu_option == 'Gêneros':
             show_genres()
